@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Hakkımda</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Geri butonu terminal temasıyla uyumlu */
+    button {
+      background-color: transparent;
+      border: 1px solid #00ff00;
+      color: #00ff00;
+      padding: 8px 15px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      margin-top: 20px;
+      display: inline-block;
+    }
+
+    button:hover {
+      background-color: #00ff00;
+      color: #000;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Hakkımda</h1>
+    <nav>
+      <a href="giris.html">Anasayfa</a>
+      <a href="projeler.html">Projeler</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Kendimi Tanıtayım</h2>
+    <p>Adım Muhammed Said. Bilgisayar Programcılığı bölümünden 4 üzerinden 3.60 ortalamayla yeni mezun oldum.</p>
+    <p>Genel olarak bilgisayarlarla ve teknolojik aletlerle aram iyi, her ortama uyum sağlayabilirim.</p>
+    <p><strong>Eğitim:</strong> Kahramanmaraş Sütçü İmam Üniversitesi - Afşin Meslek Yüksekokulu</p>
+    <p><strong>İlgi Alanlarım:</strong> HTML, ASP, C#, VB</p>
+
+    <button onclick="history.back()">⬅ Geri Git</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Muhammed Said</p>
+  </footer>
+</body>
+</html>

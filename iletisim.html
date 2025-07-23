@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>İletişim</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    /* Geri butonu terminal temasıyla uyumlu */
+    button {
+      background-color: transparent;
+      border: 1px solid #00ff00;
+      color: #00ff00;
+      padding: 8px 15px;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 16px;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease, color 0.3s ease;
+      margin-top: 20px;
+      display: inline-block;
+    }
+    button:hover {
+      background-color: #00ff00;
+      color: #000;
+    }
+
+    section h2, section h3 {
+      color: #00ff00;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    p, ul {
+      color: #66ff66;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 1.1em;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+    }
+
+    ul li {
+      margin: 8px 0;
+    }
+
+    ul li a {
+      color: #00ff00;
+      text-decoration: none;
+      border-bottom: 1px dashed #00ff00;
+      transition: color 0.3s ease;
+    }
+
+    ul li a:hover {
+      color: #99ff99;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>İletişim</h1>
+    <nav>
+      <a href="giris.html">Anasayfa</a>
+      <a href="hakkimda.html">Hakkımda</a>
+      <a href="projeler.html">Projeler</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+  </header>
+
+  <section>
+    <h2>Benimle İletişime Geçin</h2>
+
+    <p><strong>Telefon:</strong> <a href="tel:+905519498444">+90 551 949 84 44</a></p>
+    <p><strong>E-posta:</strong> <a href="mailto:m.msaeed2005@gmail.com">m.msaeed2005@gmail.com</a></p>
+
+    <h3>Sosyal Medya</h3>
+    <ul>
+      <li><a href="https://github.com/mhmmdsd05" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      <li><a href="https://www.linkedin.com/in/muhammed-said-3051ab269/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+      <li><a href="https://www.instagram.com/mhmmdsd05/?hl=tr" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+    </ul>
+
+    <button onclick="history.back()">⬅ Geri Git</button>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Muhammed Said</p>
+  </footer>
+</body>
+</html>

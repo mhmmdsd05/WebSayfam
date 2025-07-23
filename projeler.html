@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Projelerim</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    .projects {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 25px;
+    }
+
+    .project-card {
+      border: 1px solid #00ff00;
+      border-radius: 8px;
+      padding: 20px;
+      background-color: #001100;
+      box-shadow: 0 0 10px #00ff00aa;
+      transition: transform 0.3s ease;
+    }
+
+    .project-card:hover {
+      transform: scale(1.02);
+      box-shadow: 0 0 15px #00ff00cc;
+    }
+
+    .project-card h2 {
+      margin-top: 0;
+      color: #00ff00;
+      font-size: 1.6em;
+      font-family: 'Courier New', Courier, monospace;
+    }
+
+    .project-card p {
+      color: #66ff66;
+      font-family: 'Courier New', Courier, monospace;
+      line-height: 1.4;
+    }
+
+    footer {
+      text-align: center;
+      border-top: 1px solid #00ff00;
+      padding: 10px 20px;
+      font-size: 0.9em;
+      color: #00ff00;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Projelerim</h1>
+    <nav>
+      <a href="giris.html">Anasayfa</a>
+      <a href="hakkimda.html">Hakkımda</a>
+      <a href="projeler.html">Projeler</a>
+      <a href="iletisim.html">İletişim</a>
+    </nav>
+  </header>
+
+  <section class="projects">
+
+    <div class="project-card">
+      <h2>Araç Muayene Randevu Sistemi</h2>
+      <p>Kullanıcılar plaka ve kayıt bilgileriyle giriş yapar, 81 il ve saat dilimine göre araç muayene randevusu alabilir.</p>
+      <p><strong>Teknolojiler:</strong> Classic ASP, Access, HTML, JavaScript</p>
+    </div>
+
+    <div class="project-card">
+      <h2>C# ile Access Veritabanı Pekiştirme Uygulaması</h2>
+      <p>Windows Forms ortamında Access veritabanı bağlantısı ile CRUD işlemlerini içeren kapsamlı masaüstü uygulama.</p>
+      <p><strong>Teknolojiler:</strong> C#, .NET, Microsoft Access</p>
+    </div>
+
+    <div class="project-card">
+      <h2>Otel Kayıt Sayfası</h2>
+      <p>Oda durumu, rezervasyon, yemek listesi, giriş-çıkış işlemleri ve formlarla desteklenen otel yönetim sistemi.</p>
+      <p><strong>Teknolojiler:</strong> Classic ASP, HTML, JavaScript</p>
+    </div>
+
+    <div class="project-card">
+      <h2>WhatsApp Cloud API ile Otomatik Mesajlaşma</h2>
+      <p>Bir görüşme sonlandıktan 2 dakika sonra otomatik mesaj gönderen C# uygulaması.</p>
+      <p><strong>Teknolojiler:</strong> C#, .NET, WhatsApp Cloud API</p>
+    </div>
+
+    <div class="project-card">
+      <h2>Otopark Kayıt Sistemi</h2>
+      <p>Araç plakası, giriş ve çıkış zamanları gibi bilgilerin kaydedildiği sade ama işlevsel bir otopark kayıt sistemi.</p>
+      <p><strong>Teknolojiler:</strong> Classic ASP, Access</p>
+    </div>
+
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Muhammed Said</p>
+  </footer>
+</body>
+</html>

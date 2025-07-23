@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8">
+  <title>Giriş</title>
+  <style>
+    body {
+      background-color: #000;
+      color: #00ff00;
+      font-family: 'Courier New', Courier, monospace;
+      font-size: 24px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    #terminal {
+      white-space: pre;
+      border-left: 3px solid #00ff00;
+      padding-left: 10px;
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes blink {
+      50% { border-color: transparent; }
+    }
+  </style>
+</head>
+<body>
+  <div id="terminal"></div>
+
+  <script>
+    const metin = "Merhaba, ben Muhammed Said...";
+    const terminal = document.getElementById("terminal");
+    let i = 0;
+
+    function yaz() {
+      if (i < metin.length) {
+        terminal.textContent += metin.charAt(i);
+        i++;
+        setTimeout(yaz, 100);
+      } else {
+        setTimeout(() => {
+          window.location.href = "giris.html"; // index.asp yapabilirsin
+        }, 1500);
+      }
+    }
+
+    yaz();
+  </script>
+</body>
+</html>
